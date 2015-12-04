@@ -9,6 +9,7 @@ describe('testing routes',function () {
   it('should respond with 200 on GET /',function (done) {
     request.get(url)
       .end(function (err, res) {
+        expect(res.text).toInclude('<h1>Bookshelf</h1>')
         expect(res.statusCode).toEqual(200);
         done();
       })
@@ -19,15 +20,6 @@ describe('testing routes',function () {
       .end(function (err,res) {
         expect(res.statusCode).toEqual(404);
         done();
-      })
-  });
-
-  it('should return list of existing books on GET /',function (done) {
-    request.get(url)
-      .end(function (err,res) {
-        expect(res.text).toInclude('Bookshelf');
-        expect(res.status).toEqual(200);
-        done()
       })
   });
 
