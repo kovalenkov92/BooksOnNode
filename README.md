@@ -5,3 +5,5 @@
     npm install
     npm start
     In browser: http://localhost:3000
+### To run tests
+    npm test (server should be running)
