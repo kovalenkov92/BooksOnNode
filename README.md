@@ -1,5 +1,5 @@
-== BooksOnNode
-=== To lift the server
+## BooksOnNode
+### To lift the server
     git clone https://github.com/kovalenkov92/BooksOnNode.git
     cd BooksOnNode
     npm install
