@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ book.title }}{% endblock %}
+
+{% block content %}
+  <h1>{{ book.title }}</h1>
+  <p>{{ book.author }}</p>
+  <p>{{ book.isbn }}</p>
+  <p>{{ book.year }}</p>
+  <p>{{ book.description }}</p>
+  <p><em>Created On: </i> {{ book.created_on.toDateString() }}</p>
+  <p><i>Last Updated On: </i> {{ book.updated_on.toDateString() }}</p>
+  <p><a href="/">Back to List</a></p>
+{% endblock %}

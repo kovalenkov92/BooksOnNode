@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}Books{% endblock %}
+
+{% block content %}
+  <h1>Add Book</h1>
+  <form action="/books/create" method="post">
+    <p><input type="text" placeholder="Title" name="title" required></p>
+    <p><input type="text" placeholder="Author" name="author"></p>
+    <p><input type="text" placeholder="ISBN" name="isbn"></p>
+    <p><input type="text" placeholder="Year" name="year"></p>
+    <p><input type="text" placeholder="Description" name="description"></p>
+    <p><input class="btn btn-primary" type="submit" value="Create"></p>
+  </form>
+{% endblock %}
